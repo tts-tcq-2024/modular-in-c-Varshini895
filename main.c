@@ -2,11 +2,9 @@
 #include <assert.h>
 #include "color_pair.h"
 
-const int MAX_COLORPAIR_NAME_CHARS = 16;
-
-void TestNumberToPair(int pairNumber, 
+void TestNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
-    enum MinorColor expectedMinor) 
+    enum MinorColor expectedMinor)
 {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
@@ -35,6 +33,7 @@ int main() {
 
     TestPairToNumber(BLACK, ORANGE, 12);
     TestPairToNumber(VIOLET, SLATE, 25);
+
     PrintColorCodingReferenceManual();
 
     return 0;
