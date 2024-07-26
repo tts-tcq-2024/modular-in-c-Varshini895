@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "color_pair.h"
 
-const int MAX_COLORPAIR_NAME_CHARS = 16;
-
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
 };
@@ -37,7 +35,6 @@ int GetPairNumberFromColor(const ColorPair* colorPair) {
 }
 
 void PrintColorCodingReferenceManual() {
-    printf("Pair Number\tMajor Color\tMinor Color\n");
     for (int pairNumber = 1; pairNumber <= numberOfMajorColors * numberOfMinorColors; ++pairNumber) {
         ColorPair colorPair = GetColorFromPairNumber(pairNumber);
         char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
