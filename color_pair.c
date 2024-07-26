@@ -40,6 +40,6 @@ void PrintColorCodingReferenceManual() {
         ColorPair colorPair = GetColorFromPairNumber(pairNumber);
         char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
         ColorPairToString(&colorPair, colorPairNames);
-        printf("%d\t\t%s\n", pairNumber, colorPairNames);
+        //printf("%d\t\t%s\n", pairNumber, colorPairNames);
     }
 }
