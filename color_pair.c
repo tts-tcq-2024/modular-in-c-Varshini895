@@ -33,3 +33,13 @@ int GetPairNumberFromColor(const ColorPair* colorPair) {
     return colorPair->majorColor * numberOfMinorColors +
             colorPair->minorColor + 1;
 }
+
+void PrintColorCodingReferenceManual() {
+    printf("Pair Number\tMajor Color\tMinor Color\n");
+    for (int pairNumber = 1; pairNumber <= numberOfMajorColors * numberOfMinorColors; ++pairNumber) {
+        ColorPair colorPair = GetColorFromPairNumber(pairNumber);
+        char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
+        ColorPairToString(&colorPair, colorPairNames);
+        printf("%d\t\t%s\n", pairNumber, colorPairNames);
+    }
+}
