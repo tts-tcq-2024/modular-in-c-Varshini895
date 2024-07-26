@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "color_pair.h"
 
-void testNumberToPair(int pairNumber,
+void TestNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
     enum MinorColor expectedMinor)
 {
@@ -14,7 +14,7 @@ void testNumberToPair(int pairNumber,
     assert(colorPair.minorColor == expectedMinor);
 }
 
-void testPairToNumber(
+void TestPairToNumber(
     enum MajorColor major,
     enum MinorColor minor,
     int expectedPairNumber)
@@ -28,11 +28,13 @@ void testPairToNumber(
 }
 
 int main() {
-    testNumberToPair(4, WHITE, BROWN);
-    testNumberToPair(5, WHITE, SLATE);
+    TestNumberToPair(4, WHITE, BROWN);
+    TestNumberToPair(5, WHITE, SLATE);
 
-    testPairToNumber(BLACK, ORANGE, 12);
-    testPairToNumber(VIOLET, SLATE, 25);
+    TestPairToNumber(BLACK, ORANGE, 12);
+    TestPairToNumber(VIOLET, SLATE, 25);
+    
+    PrintColorCodingReferenceManual();
 
     return 0;
 }
