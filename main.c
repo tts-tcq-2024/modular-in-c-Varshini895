@@ -33,7 +33,6 @@ int main() {
 
     TestPairToNumber(BLACK, ORANGE, 12);
     TestPairToNumber(VIOLET, SLATE, 25);
-    
     PrintColorCodingReferenceManual();
 
     return 0;
