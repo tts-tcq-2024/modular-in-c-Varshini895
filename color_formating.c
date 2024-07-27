@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "color_pair.h"
-#include "color_utils.h"
+#include "color_formatting.h"
 
 void PrintColorReferenceManual() {
     printf("Color Reference Manual:\n");
