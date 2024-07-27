@@ -9,6 +9,8 @@ extern const char* MinorColorNames[];
 extern int numberOfMajorColors;
 extern int numberOfMinorColors;
 
+const int MAX_COLORPAIR_NAME_CHARS = 16;
+
 typedef struct {
     enum MajorColor majorColor;
     enum MinorColor minorColor;
