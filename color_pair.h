@@ -13,7 +13,7 @@ extern int numberOfMinorColors;
 
 typedef struct {
     enum MajorColor majorColor;
-    enum MinorColor minorColor;
+    enum MinorColor minorColor; 
 } ColorPair;
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer);
